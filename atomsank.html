@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATOM SANK TECHNOLOGY - Expertise Énergétique</title>
+    <style>
+        :root {
+            --bleu-marine: #00005A;
+            --bleu-clair: #0099FF;
+            --degrade-bleu: linear-gradient(135deg, var(--bleu-marine) 0%, var(--bleu-clair) 100%);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            background: #f8f9fa;
+            line-height: 1.6;
+        }
+
+        header {
+            background: var(--degrade-bleu);
+            padding: 1rem 0;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            padding: 0 2rem;
+        }
+
+        .logo-container {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: white;
+            padding: 10px;
+            margin-right: 2rem;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+
+        .logo-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .header-text {
+            color: white;
+        }
+
+        .header-text h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .header-text p {
+            font-style: italic;
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        nav {
+            background: rgba(255,255,255,0.95);
+            backdrop-filter: blur(10px);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav a {
+            color: var(--bleu-marine);
+            text-decoration: none;
+            padding: 0.5rem 1.5rem;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            background: var(--degrade-bleu);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .service-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .service-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+            position: relative;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+        }
+
+        .service-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-bottom: 4px solid var(--bleu-clair);
+        }
+
+        .card-content {
+            padding: 2rem;
+        }
+
+        .card-content h3 {
+            color: var(--bleu-marine);
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .card-content p {
+            color: #666;
+            margin-bottom: 1.5rem;
+            font-style: italic;
+        }
+
+        .service-details ul {
+            list-style: none;
+            padding-left: 1.5rem;
+        }
+
+        .service-details li {
+            position: relative;
+            margin-bottom: 0.8rem;
+            padding-left: 2rem;
+        }
+
+        .service-details li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 7px;
+            width: 12px;
+            height: 12px;
+            background: var(--bleu-clair);
+            border-radius: 50%;
+        }
+
+        .contact-section {
+            background: var(--degrade-bleu);
+            color: white;
+            padding: 4rem 2rem;
+        }
+
+        .contact-form {
+            max-width: 800px;
+            margin: 2rem auto;
+            background: rgba(255,255,255,0.1);
+            padding: 2.5rem;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+        }
+
+        footer {
+            background: var(--bleu-marine);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+        }
+
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .logo-container {
+                margin: 0 0 1.5rem 0;
+            }
+
+            nav a {
+                margin: 0.5rem;
+                padding: 0.5rem 1rem;
+            }
+
+            .nav-container {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo-container">
+                <img src=/storage/emulated/0/Pictures/Canva/Design sans titre_20250210_1712 25_0000.png alt="Logo ATOM SANK TECHNOLOGY">
+            </div>
+            <div class="header-text">
+                <h1>ATOM SANK TECHNOLOGY</h1>
+                <p><em>Les transporteurs de l'énergie</em></p>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="nav-container">
+            <a href="#accueil">Accueil</a>
+            <a href="#services">Expertises</a>
+            <a href="#contact">Contact</a>
+            <a href="#apropos">À propos</a>
+        </div>
+    </nav>
+
+    <!-- Section services (contenu similaire à précédemment) -->
+
+    <section class="contact-section" id="contact">
+        <!-- Formulaire de contact (identique à précédemment) -->
+    </section>
+
+    <footer>
+        <p><em>© 2024 ATOM SANK TECHNOLOGY - L'excellence énergétique à votre service</em></p>
+    </footer>
+</body>
+</html>
